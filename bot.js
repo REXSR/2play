@@ -262,7 +262,7 @@ client.on('message', function(message) {
 
     }
 
-    else if (mess.startsWith(prefix + 'تعال')) {
+    else if (mess.startsWith(prefix + 'join')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -426,31 +426,31 @@ function isYoutube(str) {
 
      .addField(`**__أوامر البوت__**`,`
 
-.    **${prefix}تعال**
+.    **${prefix}join**
 
      عشان يدخل البوت الروم
 
-     **${prefix}شغل**
+     **${prefix}play**
 
      امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
 
-     **${prefix}تخطي**
+     **${prefix}skip**
 
      تغير الأغنية
 
-     **${prefix}وقف**
+     **${prefix}stop**
 
      ايقاف الأغنية
 
-     **${prefix}كمل**
+     **${prefix}pause**
 
      مواصلة الأغنية
 
-     **${prefix}صوت**
+     **${prefix}vol**
 
      مستوى الصوت 1-100
 
-     **${prefix}اطلع**
+     **${prefix}ok**
 
      خروج البوت من الروم
 
