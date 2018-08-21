@@ -88,7 +88,7 @@ client.on('message', function(message) {
 
     const args = message.content.split(' ').slice(1).join(' ');
 
-    if (mess.startsWith(prefix + 'play')) {
+    if (mess.startsWith(prefix + 'splay')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -194,7 +194,7 @@ client.on('message', function(message) {
 
     }
 
-    else if (mess.startsWith(prefix + 'skip')) {
+    else if (mess.startsWith(prefix + 'sskip')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -210,7 +210,7 @@ client.on('message', function(message) {
 
     }
 
-    else if (message.content.startsWith(prefix + 'vol')) {
+    else if (message.content.startsWith(prefix + 'svol')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -226,7 +226,7 @@ client.on('message', function(message) {
 
     }
 
-    else if (mess.startsWith(prefix + 'pause')) {
+    else if (mess.startsWith(prefix + 'spause')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -250,7 +250,7 @@ client.on('message', function(message) {
 
     }
 
-    else if (mess.startsWith(prefix + 'stop')) {
+    else if (mess.startsWith(prefix + 'sstop')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -262,7 +262,7 @@ client.on('message', function(message) {
 
     }
 
-    else if (mess.startsWith(prefix + 'join')) {
+    else if (mess.startsWith(prefix + 'sjoin')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -270,7 +270,7 @@ client.on('message', function(message) {
 
     }
 
-    else if (mess.startsWith(prefix + 'play')) {
+    else if (mess.startsWith(prefix + 'splay')) {
 
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 
@@ -418,7 +418,7 @@ function isYoutube(str) {
 
  client.on('message', message => {
 
-     if (message.content === prefix +"مساعدة") {
+     if (message.content === prefix +"shelp") {
 
     const embed = new Discord.RichEmbed()
 
@@ -426,27 +426,27 @@ function isYoutube(str) {
 
      .addField(`**__أوامر البوت__**`,`
 
-.    **${prefix}join**
+.    **${prefix}sjoin**
 
      عشان يدخل البوت الروم
 
-     **${prefix}play**
+     **${prefix}splay**
 
      امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
 
-     **${prefix}skip**
+     **${prefix}sskip**
 
      تغير الأغنية
 
-     **${prefix}stop**
+     **${prefix}sstop**
 
      ايقاف الأغنية
 
-     **${prefix}pause**
+     **${prefix}spause**
 
      مواصلة الأغنية
 
-     **${prefix}vol**
+     **${prefix}svol**
 
      مستوى الصوت 1-100
 
