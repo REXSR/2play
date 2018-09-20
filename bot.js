@@ -20,10 +20,9 @@ client.on('guildMemberAdd', member => {
     let embed = new Discord.RichEmbed()
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
-          .addField('Welcome To Revive.')
+          .addField('**Welcome To Revive**.')
 
 }
-
 )
 
 });
