@@ -7,9 +7,7 @@ client.login(process.env.BOT_TOKEN);  //اياكككك تلعب هنا لا تح
 client.on('ready', () => {
     console.log('I am ready!');
 });
-client.on('ready', () => {
-  client.user.setGame('LOVE ALL.','https://www.twitch.tv/peery13');
-});
+
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
@@ -91,3 +89,4 @@ message.channel.startTyping();
 
 
 
+client.login(process.env.BOT_TOKEN);
