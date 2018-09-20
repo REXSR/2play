@@ -13,17 +13,52 @@ client.on('ready', function() {
 });
 
   
-  const codes =
-[
-'__ Welcome To Revive ✶__'
-]
 client.on('guildMemberAdd', member => {
-const codes = member.guild.channels.get("488406701582843920");//ايدي الشات
-if(!codes) return;
-if(codes) {
-codes.send(  `${lol[Math.floor(Math.random() * lol.length)]}`);          
-}
-});
+    let channel = member.guild.channels.find('name', 'اسم روم حق ترحيب');
+    let memberavatar = member.user.avatarURL
+      if (!channel) return;
+    let embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setThumbnail(memberavatar)
+          .addField('📢 | نورت السيرفر يا قلبي' , `Welcome to the server, ${member}`)@everyone
+
+ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+
+client.on('guildMemberAdd', member => {
+
+    let channel = member.guild.channels.find('name', 'اسم روم حق ترحيب');
+
+    let memberavatar = member.user.avatarURL
+
+      if (!channel) return;
+
+    let embed = new Discord.RichEmbed()
+
+        .setColor('RANDOM')
+
+        .addField(' ' , `Welcome To Revive ., ${member}`)
+
+
+
+               
+
+
+                     
+
+
+                                       
+
+
+
+   
+
+      channel.sendEmbed(embed);
+
+    });
+
+    
+ 
+ 
   
  
     
