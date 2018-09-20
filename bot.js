@@ -43,7 +43,25 @@ message.channel.startTyping();
 });
 
  
+client.on("message", message => {
+    
+    if(message.content.startsWith(prefix + "server")) {
+        if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send("**الأمر للاداره فقط **");
+const embed = new Discord.RichEmbed()
+        .setAuthor(message.guild.name, message.guild.iconURL)
+        .setColor("RANDOM")
 
+أعضاء السيرفر :bar_chart: \` ${message.guild.memberCount}\`
+.setDescription(`**
+صاحب السيرفر  :key: \` ${message.guild.owner.user.username} \`
+.addField(`**الرومات :scroll: **`,true)
+.addField(`# الكتابية`, `${message.guild.channels.filter(m => m.type === 'text').size}`)
+.addField( `:loud_sound: الصوتية`,`${message.guild.channels.filter(m => m.type === 'voice').size}`)
+ رتب السيرفر :scroll: 
+${message.guild.roles.size}
+        message.channel.send({embed:embed})
+    }
+});
   
 
 
