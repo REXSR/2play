@@ -19,10 +19,6 @@ client.on('guildMemberAdd', member => {
     let clinet = new Discord.RichEmbed()
         .setColor('RANDOM')
           .addField('**Welcome To Revive**.')
-
-}
-)
-
 });
 
          
