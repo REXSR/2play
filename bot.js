@@ -12,7 +12,7 @@ client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
 
-  
+     
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'play');
     let memberavatar = member.user.avatarURL
@@ -27,7 +27,7 @@ client.on('guildMemberAdd', member => {
 
 });
 
-    
+         
         
  
   
