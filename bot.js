@@ -17,8 +17,7 @@ client.on('ready', function() {
   
   const lol =
 [
-'**__ Welcome To Revive ✶__
-__ نورتنا✶__**'
+'**__ Welcome To Revive ✶__**'
 ]
 client.on('guildMemberAdd', member => {
 const codes = member.guild.channels.get("488406701582843920");//ايدي الشات
@@ -31,7 +30,31 @@ codes.send(  `${lol[Math.floor(Math.random() * lol.length)]}`);
  
     
 
+  
+
+client.on('message', message =>{
+
+    if (message.author.bot) return;
+
+    if(message.content == "Stype"){
+
+message.channel.startTyping();
+
+}
+
+});
+
  
+
+  
+
+
+
+
+
+
+ 
+
 
 
 
