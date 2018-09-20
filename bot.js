@@ -43,7 +43,7 @@ const embed = new Discord.RichEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL)
         .setColor("RANDOM")
 .setDescription(`**
-.addField('**👑__ الأونـر__**',`**${message.guild.owner}**`,true)
+.addField("**👑__اونر السيرفر__**", '**Unknown**' ,true)
 .addField("**🆔__ايدي السيرفر__**", message.guild.id,true)
 .addField("**📅__تم إنشاؤها__**", message.guild.createdAt.toLocaleString(),true)
 .addField('**🌐__نوع السيرفر__**',`[** __${message.guild.region}__ **]`,true)
