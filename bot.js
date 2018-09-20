@@ -24,6 +24,8 @@ client.on('guildMemberAdd', member => {
 
 }
 
+)
+
 });
 
     
