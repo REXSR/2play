@@ -50,7 +50,7 @@ client.on("message", message => {
 const embed = new Discord.RichEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL)
         .setColor("RANDOM")
-
+.setDescription(`**
 أعضاء السيرفر :bar_chart: \` ${message.guild.memberCount}\`
 .setDescription(`**
 صاحب السيرفر  :key: \` ${message.guild.owner.user.username} \`
@@ -60,6 +60,7 @@ const embed = new Discord.RichEmbed()
  رتب السيرفر :scroll: 
 ${message.guild.roles.size}
         message.channel.send({embed:embed})
+** `)
     }
 });
   
