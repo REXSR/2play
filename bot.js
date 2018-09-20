@@ -34,7 +34,7 @@ client.on('message', message =>{
 
     if (message.author.bot) return;
 
-    if(message.content == "#typing"){
+    if(message.content == "typing"){
 
 message.channel.startTyping();
 
