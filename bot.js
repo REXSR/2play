@@ -13,9 +13,9 @@ client.on('ready', function() {
 });
 
   
-  const lol =
+  const codes =
 [
-'**__ Welcome To Revive ✶__**'
+'__ Welcome To Revive ✶__'
 ]
 client.on('guildMemberAdd', member => {
 const codes = member.guild.channels.get("488406701582843920");//ايدي الشات
@@ -34,7 +34,7 @@ client.on('message', message =>{
 
     if (message.author.bot) return;
 
-    if(message.content == "Stype"){
+    if(message.content == "REX"){
 
 message.channel.startTyping();
 
