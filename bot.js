@@ -20,11 +20,11 @@ client.on('guildMemberAdd', member => {
     let embed = new Discord.RichEmbed()
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
-          .addField('Welcome To Revive ..')
+          .addField('Welcome To Revive.')
 
-      channel.send(embed);
+}
 
-    });
+});
 
     
  
@@ -39,7 +39,7 @@ client.on('message', message =>{
 
     if (message.author.bot) return;
 
-    if(message.content == "REX"){
+    if(message.content == "#typing"){
 
 message.channel.startTyping();
 
