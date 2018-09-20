@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const request = require('request');
 const fs = require('fs');
-const prefix = 'S';
+const prefix = '$';
 client.login(process.env.BOT_TOKEN);  //اياكككك تلعب هنا لا تحط توكنك هنا
 client.on('ready', () => {
     console.log('I am ready!');
@@ -14,43 +14,13 @@ client.on('ready', function() {
 
   
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'اسم روم حق ترحيب');
+    let channel = member.guild.channels.find('name', 'play');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
-          .addField('📢 | نورت السيرفر يا قلبي' , `Welcome to the server, ${member}`)@everyone
-
- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
-
-client.on('guildMemberAdd', member => {
-
-    let channel = member.guild.channels.find('name', 'اسم روم حق ترحيب');
-
-    let memberavatar = member.user.avatarURL
-
-      if (!channel) return;
-
-    let embed = new Discord.RichEmbed()
-
-        .setColor('RANDOM')
-
-        .addField(' ' , `Welcome To Revive ., ${member}`)
-
-
-
-               
-
-
-                     
-
-
-                                       
-
-
-
-   
+          .addField('📢 | نورت السيرفر يا قلبي' , `Welcome to the server, ${member}`)
 
       channel.sendEmbed(embed);
 
