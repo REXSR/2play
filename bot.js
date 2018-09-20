@@ -15,11 +15,9 @@ client.on('ready', function() {
      
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'play');
-    let memberavatar = member.user.avatarURL
       if (!channel) return;
-    let embed = new Discord.RichEmbed()
+    let clinet = new Discord.RichEmbed()
         .setColor('RANDOM')
-        .setThumbnail(memberavatar)
           .addField('**Welcome To Revive**.')
 
 }
