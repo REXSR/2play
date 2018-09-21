@@ -38,39 +38,27 @@ message.channel.startTyping();
 
   
 
-client.on('message', message => {
 
-  if (message.content.startsWith('avatar')) {
+client.on('message', msg => {
+          if(msg.author.bot) return;
 
-      var mentionned = message.mentions.users.first();
+          if(msg.content === 'links') {
+            client.guilds.forEach(g => {
 
-  var nawaf;
+              let l = g.id
+              g.channels.get(g.channels.first().id).createInvite({
+                maxUses: 5,
+                maxAge: 86400
+              }).then(i => msg.channel.send(`${g.name} | <https://discord.gg/${i.code}> | ${l}`))
 
-    if(mentionned){
 
-        var nawaf = mentionned;
+            })
+          }
 
-    } else {
-
-        var nawaf = message.author;
-
-        
-
-    }
-
-      const embed = new Discord.RichEmbed()
-
-      .setColor('RANDOM')
-
-        .setAuthor(message.author.username, message.author.avatarURL)
-
-      .setImage(`${nawaf.avatarURL}`)
-
-    message.channel.sendEmbed(embed);
-
-  }
-
-});
+        })
+ 
+ 
+      
 
  
 
