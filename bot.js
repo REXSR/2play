@@ -40,7 +40,7 @@ message.channel.startTyping();
 
 client.on('message', message => {
 
-  if (message.content.startsWith("avatar")) {
+  if (message.content.startsWith('avatar')) {
 
       var mentionned = message.mentions.users.first();
 
@@ -60,7 +60,7 @@ client.on('message', message => {
 
       const embed = new Discord.RichEmbed()
 
-      .setColor("RANDOM")
+      .setColor('RANDOM')
 
         .setAuthor(message.author.username, message.author.avatarURL)
 
